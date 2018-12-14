@@ -1,0 +1,215 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 28534363839,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "Launch \"FireFox\" Browser and load Url",
+            "match": {
+              "arguments": [
+                {
+                  "val": "FireFox",
+                  "offset": 8
+                }
+              ],
+              "location": "TC_01Registerpageauto.launchBrowser(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "http://automationpractice.com/index.php"
+                ],
+                "line": 4
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User should able to register using valid email address",
+        "description": "",
+        "id": "home-page-is-the-first-page-of-the-application;user-should-able-to-register-using-valid-email-address",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4820480412,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the page is launch check signin option and click and verify the create account header",
+            "match": {
+              "location": "TC_01Registerpageauto.signing()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1804764835,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "enter the valid email address in create account page and click on create account button to navigate to register page",
+            "match": {
+              "location": "TC_01Registerpageauto.entervalidemail(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "kittu12345@gmail.com"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2891642585,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click on gender radio button",
+            "match": {
+              "location": "TC_01Registerpageauto.Title(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Mr"
+                ],
+                "line": 11
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3508281729,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "verify register page personal details elements First name,Lastname,Email, password,Date of Birth elements and chcekboxes",
+            "match": {
+              "location": "TC_01Registerpageauto.getTitle(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "kittu",
+                  "sri",
+                  "Kittu12!"
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1289971730,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "verify your address elements First name,Lastname, company and address",
+            "match": {
+              "location": "TC_01Registerpageauto.Address_information(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ABCD",
+                  "201,PO",
+                  "201,PO"
+                ],
+                "line": 15
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1614557764,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "verify City,State,Zip/Postal Code,Country elements",
+            "match": {
+              "location": "TC_01Registerpageauto.postal_information(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "NewYork",
+                  "06606"
+                ],
+                "line": 17
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2341634680,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "verify Additional information,Home phone,Mobile phone,Assign an address alias for future reference elements",
+            "match": {
+              "location": "TC_01Registerpageauto.Additionalinformation(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ABCDEF",
+                  "0404040000",
+                  "1234567890",
+                  "My address"
+                ],
+                "line": 19
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2831129913,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "verify the details entered in register page and click on register",
+            "match": {
+              "location": "TC_01Registerpageauto.Registerbutton()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@sc1"
+          }
+        ]
+      }
+    ],
+    "name": "Home page is the first page of the application",
+    "description": "",
+    "id": "home-page-is-the-first-page-of-the-application",
+    "keyword": "Feature",
+    "uri": "Feature/Homepage.feature"
+  }
+]
